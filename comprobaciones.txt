@@ -1,0 +1,41 @@
+$ git log --oneline --graph --all
+* 71b4a49 Añade sombra al botón principal y cierra la issue #2
+*   6903b7c Resuelve el conflicto de cover.css
+|\  
+| * 666357e Cambia el color del botón principal a verde oscuro
+* | 1f0c158 Cambia el color del botón principal a morado
+|/  
+*   351f260 Merge pull request #2 from oregaladoleon/custom-text
+|\  
+| * 86e4ca4 Afina el eslogan de la portada
+| * 4dfde46 Ajusta el texto del pie de página
+| *   a914c9a Incorpora corrección de docs/index.md desde main
+| |\  
+| |/  
+|/|   
+* | ea1212f Elimina enlace a la portada en docs/index.md
+| *   bd567ba Incorpora los cambios en main por rectificación de error
+| |\  
+| |/  
+|/|   
+* | 5def6df Arreglo incidencia workflow
+| * c99727d Personaliza la portada para la startup
+|/  
+* 6088d6e Añade documentación con MkDocs e integración continua
+* f144c44 Añade la página de la startup y su hoja de estilos
+* 5bb69d0 Initial commit
+
+$ git remote -v
+espejo	git@github.com:oregaladoleon/git-work-espejo.git (fetch)
+espejo	git@github.com:oregaladoleon/git-work-espejo.git (push)
+origin	git@github.com:oregaladoleon/git-work.git (fetch)
+origin	git@github.com:oregaladoleon/git-work.git (push)
+upstream	git@github.com:oregaladoleon/git-work-espejo.git (fetch)
+upstream	git@github.com:oregaladoleon/git-work-espejo.git (push)
+
+$ git tag
+0.1.0
+
+$ git log --format="%an <%ae>" | sort -u
+Óscar <oscar@oregaladoleon.es>
+Óscar Regalado León <osrl90@gmail.com>
